@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JourneyMakers</title>
+  <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./book.css">
+</head>
+<body>
+    <h1>Book Your Trip</h1>
+    <div class="max">
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+      
+      <label for="destination">Destination:</label>
+      <select id="destination" name="destination" required>
+        <option value="">Select a destination</option>
+        <option value="Paris">Paris</option>
+        <option value="London">London</option>
+        <option value="New York">New York</option>
+        <option value="Tokyo">Tokyo</option>
+      </select>
+      
+      <label for="check-in">Check-in Date:</label>
+      <input type="date" id="check-in" name="check-in" required>
+      
+      <label for="check-out">Check-out Date:</label>
+      <input type="date" id="check-out" name="check-out" required>
+      
+      <label for="hotel">Preferred Hotel:</label>
+      <select id="hotel" name="hotel" required>
+        <option value="">Select a hotel</option>
+        <option value="Normal">Normal</option>
+        <option value="Luxury">Luxury</option>
+        <option value="Premium Luxury">Premium Luxury</option>
+      </select><br>
+      <input class="button" type="submit">
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Destination</th>
+          <th>Check-in</th>
+          <th>Check-out</th>
+          <th>Hotel</th>
+          <th>Status</th>
+          <th>Cancel</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
+<script src="./book.js"></script>
