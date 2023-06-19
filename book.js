@@ -22,10 +22,7 @@ form.addEventListener('submit',(e) =>{
     booked.push(obj);
     localStorage.setItem('book',JSON.stringify(booked));
     display(booked);
-    form.reset();
-});
-
-function display(data) {
+    function display(data) {
     tbody.innerHTML ="";
     data.forEach((e, index) => {
         let tr = document.createElement('tr');
@@ -56,3 +53,6 @@ function display(data) {
         });
     });
 }
+    form.reset();
+});
+
