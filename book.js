@@ -44,6 +44,7 @@ function display(data) {
         hoteltd.textContent = e.hotel;
         status.textContent = 'Booked';
         cancel.textContent = 'Cancel';
+        cancel.style.cursor ='pointer'
 
         tr.append(nametd, destinationtd, check_intd, check_outtd, hoteltd, status, cancel);
         tbody.append(tr);
